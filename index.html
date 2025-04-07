@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To YM Store</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss"></style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white text-black">
+    <main>
+      <!-- Header -->
+      <header
+        class="bg-gradient-to-r from-black to-gray-950 shadow-md p-4 sticky top-0 z-10"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <h1 class="text-2xl text-white font-bold">YM Store</h1>
+
+          <!-- Hamburger Menu Button -->
+          <button
+            id="menu-toggle"
+            class="text-white text-3xl md:hidden focus:outline-none"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Desktop Navigation Menu -->
+          <nav
+            id="desktop-menu"
+            class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <ul class="flex flex-col md:flex-row md:space-x-6">
+              <li>
+                <a
+                  href="#home"
+                  class="text-white text-lg font-semibold hover:text-green-400 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-white text-lg font-semibold hover:text-green-400 transition duration-300"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-white text-lg font-semibold hover:text-green-400 transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Navigation Menu -->
+          <div
+            id="mobile-menu"
+            class="hidden fixed inset-0 bg-black bg-opacity-75 z-20 flex flex-col items-center justify-center"
+          >
+            <button
+              id="close-menu"
+              class="absolute top-4 right-4 text-white text-3xl focus:outline-none"
+              aria-label="Close Navigation"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="space-y-6 text-center">
+              <li>
+                <a
+                  href="#home"
+                  class="text-white text-2xl font-semibold hover:text-pink-800 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-white text-2xl font-semibold hover:text-pink-800 transition duration-300"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-white text-2xl font-semibold hover:text-pink-800 transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="relative h-[600px] bg-cover bg-center flex items-center justify-between text-center text-white"
+        style="background-image: url('./backgroundimg/Bg-Img.jpg')"
+      >
+        <div class="container mx-auto">
+          <h2 class="text-5xl font-bold mb-4">Welcome to YMMJ Store</h2>
+          <p class="text-lg mb-6">
+            Discover the best deals on top products. Shop now and save big!
+          </p>
+          <button
+            class="bg-white text-blue-600 py-2 px-6 rounded-lg font-semibold hover:b-gray-300 transition duration-500 ease-out transform hover:scale-125"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+      <!-- Products Section -->
+      <section id="products" class="container mx-auto py-10 bg-[#F0F8FF]">
+        <h2 class="text-3xl font-bold text-gray-950 text-center mb-6">
+          Featured Products
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/SDSAC-8554-Book5-Pro_16_US_Gray_001_Front_RGB-1600x1200.webp"
+              alt="Samsung Galaxy Book5 Pro"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-[#d6005e]">
+              Samsung Galaxy Book5 Pro 360
+            </h3>
+            <p class="text-sm text-[#913d56] mb-3">
+              SAMSUNG 16” Galaxy Book5 Pro 360 Copilot+ PC, AI Laptop Computer,
+              Intel Core 7 Ultra Processor, 3K AMOLED (2880 x 1800) Touchscreen,
+              120HZ Refresh Rate, Dolby Atmos Quad Speakers, All-Day Battery
+              Life...
+            </p>
+            <a
+              href="https://www.amazon.com/s?k=samsung+galaxy+book+5+pro&rh=n%3A21512780011%2Cp_123%3A46655&dc&ds=v1%3AwRZ6H0CwRHmTqw0LQwxUpI20kRRXT3wuZBPwKa3ahxQ&qid=1743937106&rnid=85457740011&ref=sr_nr_p_123_1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-[#220a14] text-white py-1 px-4 rounded-lg hover:bg-gray-900 transition duration-500 ease-out hover:scale-102"
+              >Add to cart</a
+            >
+
+            <span class="block mt-2 font-bold text-lg">$1,499.99</span>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/MacBook Pro 16.2 M4 Pro.webp"
+              alt="2024 MacBook Pro Laptop with M4 Pro"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-blue-800">
+              Apple 2024 MacBook Pro
+            </h3>
+            <p class="text-sm text-blue-900 mb-3">
+              Apple 2024 MacBook Pro Laptop with M4 chip with 10 core CPU and 10
+              core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina
+              XDR Display, 16GB Unified Memory, 512GB SSD Storage; Space
+              Black...
+            </p>
+            <a
+              href="https://www.amazon.com/Apple-2024-MacBook-Laptop-10%E2%80%91core/dp/B0DLHBYRPS/ref=sr_1_3?crid=2VTBBN2K68QKE&dib=eyJ2IjoiMSJ9.Daoa0YlWSET4Qvd69FnoVWPN4ISTvPqeUBHBUqiTCVnGjHj071QN20LucGBJIEps.OmrT42UAHY6c1GuegGdG9L4HCA1QRQWAEm1YaM1gZtI&dib_tag=se&keywords=samsung%2Bgalaxy%2Bbook%2B5&qid=1743940118&refinements=p_n_feature_thirty-one_browse-bin%3A23716058011&rnid=23716050011&sprefix=samsung%2Bgalaxy%2Caps%2C2891&sr=8-3&th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-blue-950 text-white py-1 px-4 rounded-lg hover:bg-black"
+              >See option</a
+            >
+            <span class="block mt-2 font-bold text-lg">$1,300.39</span>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/ASUS ROG Zephyrus.jpg"
+              alt="ASUS ROG Zephyrus"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-[#008860]">
+              ASUS ROG Zephyrus
+            </h3>
+            <p class="text-sm text-[#083f2e] mb-3">
+              ASUS ROG Zephyrus G16 Gaming Laptop 16" 165Hz FHD, Intel Core
+              i7-13620H, RTX 4070 8GB, 16GB RAM, 1TB SSD, Thin & Light, RGB
+              Backlit Keyboard, Windows 11 Pro, Portable Gaming PC + Gaming
+              Bundle...
+            </p>
+            <a
+              href="https://www.amazon.com/ASUS-Zephyrus-i7-13620H-Keyboard-Portable/dp/B0DZZWP9KL/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.7032aefd-3c59-4a1e-aaf4-8d3a944207a4%3Aamzn1.sym.7032aefd-3c59-4a1e-aaf4-8d3a944207a4&crid=3PH1ODCO0BSLU&cv_ct_cx=Asus%2BZenbook%2BA14%2B(UX3407)&keywords=Asus%2BZenbook%2BA14%2B(UX3407)&pd_rd_i=B0DZZCQJT4&pd_rd_r=d8a60a96-00b0-49aa-adf6-530f403a7060&pd_rd_w=YmVxJ&pd_rd_wg=9TbiH&pf_rd_p=7032aefd-3c59-4a1e-aaf4-8d3a944207a4&pf_rd_r=914NGJRJXRCG9QQDZ2V0&qid=1743939088&s=electronics&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=asus%2Bzenbook%2Ba14%2Bux3407%2B%2Celectronics%2C787&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776&th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-[#0a271e] text-white py-1 px-4 rounded-lg hover:bg-[#030706]"
+              >Shop now</a
+            >
+            <span class="block mt-2 font-bold text-lg">$1549.99</span>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/Dellxps1.jpeg"
+              alt="Dell XPS 15"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-black">
+              Dell XPS 15
+            </h3>
+            <p class="text-sm text-gray-900 mb-3">
+              Dell XPS 15 - 15 Inch FHD+, Intel Core i7 10th Gen, 16GB Memory,
+              512GB Solid State Drive, Nvidia GeForce GTX 1650 Ti 4GB GDDR6,
+              Fingerprint Reader, HD Audio, Backlit Keyboard, Memory Card Slot,
+              Numeric Keypad Windows 10 Home - Silver...
+            </p>
+            <a
+              href="https://www.amazon.com/Dell-XPS-15-GeForce-Windows/dp/B089HJX59L?th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-black text-white py-1 px-4 rounded-lg hover:bg-gray-900"
+              >Shop now</a
+            >
+            <span class="block mt-2 font-bold text-lg">$1,999.00</span>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/Galaxy Book4 ULTRA.jpg"
+              alt="Samsung Galaxy Book 4 Utra"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-[#d6005e]">
+              Samsung Galaxy Book4 Ultra
+            </h3>
+            <p class="text-sm text-[#913d56] mb-3">
+              The Samsung Galaxy Book4 Ultra features a 16-inch 3K Dynamic
+              AMOLED 2X display. Powered by Intel Core Ultra processors and
+              NVIDIA GeForce RTX graphics, it delivers top-tier performance for
+              gaming, rendering, and AI-driven tasks Long-lasting battery with
+              up to 21 hours of video runtime and 140W Super Fast Charging...
+            </p>
+            <a
+              href="https://www.amazon.com/Samsung-Electronics-Galaxy-GeForce-Windows/dp/B0DK7RTGWQ/ref=sr_1_1?crid=26H4LHSXM2GJS&dib=eyJ2IjoiMSJ9.DUt1EMu0Wh6XtRRLQd-ppO-beNAnJU1-n4oPHIzFU4rpBGNSkNn9EFM8arOqTGTLdR6NIrdMU446inNmJq8ivhf8vHjIH29nzaHsKVycTGfNgJXAFUP-IxF4qSIZiO-jLdMnoB1R_cEm5TTO1EoZHVcAqvxRpp2wfMjOW_sIt3JR80zw9ZizLT594KbBhHdYKp5fm6UsfuhvkgkTtDh0-4vNAvu4VhXnM3uQ-g-2-Js.Fmvt8mR696T3p69n_68tOQWQ-WuOxBsPo3cAkj1O4r4&dib_tag=se&keywords=samsung+galaxy+book+4+ultra&qid=1743957452&sprefix=samsung+galaxy+book+4+ultr%2Caps%2C528&sr=8-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-[#220a14] text-white py-1 px-4 rounded-lg hover:bg-gray-900"
+              >Add to cart</a
+            >
+            <span class="block mt-2 font-bold text-lg">$2,399.99</span>
+          </div>
+          <!-- Product Card 6 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/Apple 2025 MacBook Air.jpg"
+              alt="Apple 2025 MacBook Air"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-blue-800">
+              Apple 2025 MacBook Air
+            </h3>
+            <p class="text-sm text-blue-900 mb-3">
+              The Apple 2025 MacBook Air is a sleek, ultra-portable laptop
+              powered by the M4 chip, offering improved performance and
+              efficiency. It features a Liquid Retina display with 500 nits
+              brightness and True Tone technology, ensuring vibrant visuals.
+              Processor: Apple M4 chip with 10-core CPU and 10-core GPU...
+            </p>
+            <a
+              href="https://www.amazon.com/Apple-2025-MacBook-15-inch-Laptop/dp/B0DZD8V9HW/ref=sr_1_2?crid=2VTBBN2K68QKE&dib=eyJ2IjoiMSJ9.Daoa0YlWSET4Qvd69FnoVWPN4ISTvPqeUBHBUqiTCVnGjHj071QN20LucGBJIEps.OmrT42UAHY6c1GuegGdG9L4HCA1QRQWAEm1YaM1gZtI&dib_tag=se&keywords=samsung%2Bgalaxy%2Bbook%2B5&qid=1743940118&refinements=p_n_feature_thirty-one_browse-bin%3A23716058011&rnid=23716050011&sprefix=samsung%2Bgalaxy%2Caps%2C2891&sr=8-2&th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-blue-950 text-white py-1 px-4 rounded-lg hover:bg-black"
+              >See option</a
+            >
+            <span class="block mt-2 font-bold text-lg">$1,594.00</span>
+          </div>
+          <!-- Product Card 7 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/asus-zenbook-14-i5-1592206960.jpg"
+              alt="ASUS Zenbook 14 OLED Laptop"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-[#008860]">
+              ASUS Zenbook 14 OLED Laptop
+            </h3>
+            <p class="text-sm text-[#083f2e] mb-3">
+              The Asus Zenbook A14 (UX3407) is a sleek and powerful Copilot+ PC
+              designed for productivity and AI-driven tasks. It features a
+              14-inch OLED display with WUXGA (1920 x 1200) or 3K (2880 x 1800)
+              resolution, offering vibrant colors and HDR support Processor:
+              Qualcomm Snapdragon X series with Hexagon™ NPU for AI
+              acceleration...
+            </p>
+            <a
+              href="https://www.amazon.com/ASUS-i9-13900H-Touchscreen-Fingerprint-Thunderbolt/dp/B0D732PBQS/ref=sr_1_4?crid=3PH1ODCO0BSLU&dib=eyJ2IjoiMSJ9.sw7lKmQHb8ufFWNjJjiKRMeWlnFAWZAlyB5ihrnf1UWkDA5sTyp-ilso9F0nFi2JiOg--PDVCzAicXbZPSubjvkKmwEftjrQH1w6a_GugWGMeTzMTaDuoKAceAucYS_510unPNmWSjoFhxNWxOrxe0f9xwfjmCDrAIAgS6rdfbe9-1tLbG_1SYvSBmRZKslY6HpcAWhqcXlbGn8LTKhEOXiG_gSxe8NPlsW2XYyYPwtU0q_q_1wzvnS6ErCHPeAQGHATcDAoh6WzgRpk11LXbOXAEc2fvJnKPRT6D1Do46w.Y3IY4w6mQce5ykp26rkswJ07fOatbnBOl6izhYUaW4w&dib_tag=se&keywords=Asus%2BZenbook%2BA14%2B(UX3407)&qid=1743939088&s=electronics&sprefix=asus%2Bzenbook%2Ba14%2Bux3407%2B%2Celectronics%2C787&sr=1-4&th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-[#0a271e] text-white py-1 px-4 rounded-lg hover:bg-[#030706]"
+              >Shop now</a
+            >
+            <span class="block mt-2 font-bold text-lg">$1,649.00</span>
+          </div>
+          <!-- Product Card 8 -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="./img/Dell Precision 5570.jpg"
+              alt="Dell Precision 5570"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-lg font-bold mt-2 text-center text-black">
+              Dell Precision 5570
+            </h3>
+            <p class="text-sm text-gray-900 mb-3">
+              The Dell Precision 5570 mobile workstation designed for
+              professionals handling demanding workloads like video editing, 3D
+              modeling, and engineering tasks. It features Intel 12th Gen
+              processors (up to Core i9-12900H) and NVIDIA RTX A2000 graphics,
+              delivering high performance Display: 15.6-inch IPS LCD with 16:10
+              aspect ratio and 500 nits brightness...
+            </p>
+            <a
+              href="https://www.amazon.com/Dell-XPS-15-GeForce-Windows/dp/B089HJX59L?th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 bg-black text-white py-1 px-4 rounded-lg hover:bg-gray-900"
+              >Shop now</a
+            >
+            <span class="block mt-2 font-bold text-lg">$2,899.00</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-12 bg-black text-white">
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <img
+            src="./backgroundimg/hero secton btm.jpg"
+            class="w-full runded-lg"
+            alt="Hero bottom section"
+          />
+          <div>
+            <h2 class="text-5xl font-bold mb-6">
+              Sign Up for 10% Off Your Next Order
+            </h2>
+            <p>
+              By subscribing to the newsletter you agree to our privacy policy.
+            </p>
+            <form method="POST" action="/submit-form">
+              <input
+                type="text"
+                placeholder="email@address.com"
+                required
+                class="w-full max-w-xs mx-auto mt-4 p-2 border rounded-lg text-black"
+              />
+              <button
+                class="mt-4 mx-auto py-2 px-8 border rounded-lg bg-[#059603] hover:bg-[#d6005e] transition duration-500 ease-out transform hover:scale-105"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-black text-white text-center py-4">
+        <div class="flex justify-center space-x-4">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook text-white"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter text-white"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram text-white"></i>
+          </a>
+        </div>
+        <p>&copy;2025 YM Store. All rights reserved.</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
